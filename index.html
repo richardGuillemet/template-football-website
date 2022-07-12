@@ -14,22 +14,54 @@
 
 <body>
     <header>
-        <div>
-            <img src="/assets/images/logo_fcjunior.png" alt="">
-            <nav>
+        <div class="header">
+            <img class="header__picture" src="/assets/images/logo_fcjunior.png" alt="">
+            <nav class="header__nav nav">
                 <ul>
-                    <li>Joueurs</li>
-                    <li>Equipes</li>
-                    <li>Chamionnats</li>
+                    <li class="nav__link"><a href="#">Joueurs</a></li>
+                    <li class="nav__link"><a href="#">Equipes</a></li>
+                    <li class="nav__link"><a href="#">Chamionnats</a></li>
                 </ul>
             </nav>
-            <form action="GET">
-                <input type="search" placeholder="recherche...">
-                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-
+            <form class="header__search search" action="GET">
+                <input class="search__input" type="search" placeholder="recherche...">
+                <button type="submit"><i class="fa fa-search search__button" aria-hidden="true"></i></button>
             </form>
         </div>
     </header>
+
+    <main>
+        <section>
+            <h1>Bienvenue sur le site du FC Junior</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis odio quos debitis eveniet
+                impedit iusto soluta laborum, facilis, provident libero voluptatem sunt totam id, esse maxime nihil
+                voluptatum accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sunt necessitatibus
+                sequi omnis rem, recusandae voluptatum, ullam dolor quisquam doloribus explicabo assumenda fuga, sed
+                iure corporis. Ex placeat velit quod.</p>
+        </section>
+
+        <section>
+            <div class="card">
+                <div class="card__clubInformations">
+                    <span>PSG</span>
+                    <span>n°7</span>
+                </div>
+                <div class="card__picture">
+                    <img src="/assets/images/mbappe.jpg" alt="">
+                </div>
+                <div class="card__playerInformations playerInformations">
+                    <h3 class="playerInformations__name">Kylian Mbappe</h3>
+                    <span class="playerInformations__position">Attaquant</span>
+                </div>
+                <button><a href="#" class="card__button">En savoir plus</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span class="footer__title">FC Junior</span>
+        <span class="footer__author">Richard Guillemet</span>
+    </footer>
 </body>
 
 </html>
