@@ -9,6 +9,9 @@
     <link rel="icon" href="/assets/images/logo_fcjunior.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
         integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat&display=swap" rel="stylesheet">
     <title>junior fc</title>
 </head>
 
@@ -31,29 +34,27 @@
     </header>
 
     <main>
-        <section>
-            <h1>Bienvenue sur le site du FC Junior</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis odio quos debitis eveniet
+        <section id="presentation" class="presentation">
+            <h1 class="presentation__title">Bienvenue sur le site du FC Junior</h1>
+            <p class="presentation__texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis
+                odio quos debitis eveniet
                 impedit iusto soluta laborum, facilis, provident libero voluptatem sunt totam id, esse maxime nihil
                 voluptatum accusamus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sunt necessitatibus
                 sequi omnis rem, recusandae voluptatum, ullam dolor quisquam doloribus explicabo assumenda fuga, sed
                 iure corporis. Ex placeat velit quod.</p>
         </section>
 
-        <section>
+        <section id="players" class="players">
             <div class="card">
-                <div class="card__clubInformations">
-                    <span>PSG</span>
-                    <span>n°7</span>
-                </div>
+                <span class="clubInformations__team">PSG</span>
+                <span class="clubInformations__number">n°7</span>
                 <div class="card__picture">
                     <img src="/assets/images/mbappe.jpg" alt="">
                 </div>
-                <div class="card__playerInformations playerInformations">
-                    <h3 class="playerInformations__name">Kylian Mbappe</h3>
-                    <span class="playerInformations__position">Attaquant</span>
-                </div>
-                <button><a href="#" class="card__button">En savoir plus</a></button>
+
+                <h3 class="playerInformations__name">Kylian Mbappe</h3>
+                <span class="playerInformations__position">Attaquant</span>
+                <button class="card__button"><a href="#">En savoir plus</a></button>
             </div>
         </section>
     </main>
