@@ -19,18 +19,34 @@ html{
 	height: 100vh;
 }
 
-
-
-#presentation{
+main{
+	width: 90%;
+	margin: auto;
 	color: var(--blanc);
+	font-family: 'Montserrat', sans-serif;
 }
 
-
-
-#players{
-	margin: auto;
+#players, #teams, #leagues{
+	width: 65%;
+	margin: 5rem auto;
 	font-family: 'Montserrat', sans-serif;
-	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.titleH1{
+	font-size: 3.6rem;
+	text-align: center;
+}
+
+.titleH2{
+	font-size: 3rem;
+	text-align: center;
+	flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+
 }
 
 
@@ -43,49 +59,59 @@ html{
 	width: 25rem;
 	background: radial-gradient(#0A0C17 ,#0C3F65);
 	border-radius: 2rem;
+	margin: 2rem;
 }
 
-.clubInformations__team{
+.card__information{
 	margin: 1rem;
 	display: block;
+	color: var(--vert);
+	font-size: 1.6rem;
+}
+
+.card__team{
 	grid-column: 1/2;
-	color: var(--vert);
 	justify-self : start;
-	font-size: 1.6rem;
 }
 
-.clubInformations__number{
-	margin: 1rem;
-	display: block;
+.card__number{
 	grid-column: 2/3;
-	color: var(--vert);
 	justify-self: end;
-	font-size: 1.6rem;
 }
 
 .card__picture{
 	margin: auto;
 	grid-column: 1/3;
+
 }
 
 .card__picture img{
 	display: block;
 	margin: auto;
-	clip-path:ellipse(50% 50%);
-	font-size: 1.6rem;
+	clip-path: circle();
 	width: 70%;
 	justify-self: center;
+	object-fit: cover;
+	width: 15rem; height: 15rem; 
+	background-position: top;
+	position: relative;
+
+
 }
 
-.playerInformations__name{
+.card__name{
+	margin: auto;
+	display: block;
 	grid-column: 1/3;
 	justify-self: center;
 	color: var(--bleu);
 	font-family: 'Bitter', serif;
 	font-size: 3rem;
+	text-align: center;
+	
 }
 
-.playerInformations__position{
+.card__position{
 	grid-column: 1/3;
 	justify-self: center;
 	color: var(--vert);
@@ -102,7 +128,6 @@ html{
 	border: none;
 	width: 70%;
 	margin-bottom: 1.5rem;
-
 }
 
 .card__button a{
@@ -111,5 +136,25 @@ html{
 	padding: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2rem;
+}
 
+
+
+.card__country{
+	justify-self : start;
+}
+
+.card__league{
+	justify-self : end;
+}
+
+
+
+footer{
+	margin-top: 10rem;
+	background-color: var(--vert);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.5rem;
 }
