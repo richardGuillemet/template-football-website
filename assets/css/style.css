@@ -102,7 +102,7 @@ main{
 }
 
 #players, #teams, #leagues{
-	width: 65%;
+	width: 70%;
 	margin: 7rem auto;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
