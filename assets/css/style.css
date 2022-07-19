@@ -12,12 +12,73 @@ html{
 	--bleu : #02B9F5;
     font-family: 'Roboto', sans-serif;
 	background-color: var(--noir);
+	font-display: block;
+}
+
+header{
+	background: no-repeat center 45%/ cover url(/assets/images/header.jpg);
+	height: 100vh;
 }
 
 .header{
-	background: no-repeat center 60%/ cover url(/assets/images/header.jpg);
-	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	align-items: center;
 }
+
+.header__picture{
+	margin-left: 1rem;
+	width: 10rem;
+	height: 10rem;
+}
+
+.header__nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.nav__link a{
+	text-decoration: none;
+	color: var(--blanc);
+	margin: 0 2rem;
+	font-size: 3rem;
+	font-family: bitter, sans-serif;;
+	font-weight: bold;
+}
+
+.nav__link a:hover{
+	color: var(--noir);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.header__search{
+	align-items: center;
+	justify-content: center;
+}
+
+.search__input{
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+.search__button{
+	font-size: 3rem;
+	background-color: rgba(0, 0, 0, 0);
+	color: var(--bleu);
+	border: none;
+	margin: 0 1rem;
+}
+
+.search__button:hover{
+
+	color: var(--vert);
+
+}
+
+
 
 main{
 	width: 90%;
@@ -28,7 +89,7 @@ main{
 
 #players, #teams, #leagues{
 	width: 65%;
-	margin: 5rem auto;
+	margin: 7rem auto;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	flex-wrap: wrap;
@@ -40,13 +101,19 @@ main{
 .titleH1{
 	font-size: 3.6rem;
 	text-align: center;
+	margin-top: 5rem;
 }
 
 .titleH2{
 	font-size: 3rem;
 	text-align: center;
 	flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+	margin: 2rem auto;
+}
 
+.presentation__texte{
+	margin-top: 2rem;
+	font-size: 1.8rem;
 }
 
 
