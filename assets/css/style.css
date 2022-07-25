@@ -101,7 +101,7 @@ main{
 
 }
 
-#players, #teams, #leagues, #teamPresentation{
+#players, #teams, #leagues, #teamPresentation, #leaguePresentation{
 	width: 70%;
 	margin: 7rem auto;
 	font-family: 'Montserrat', sans-serif;
@@ -241,17 +241,17 @@ footer{
 
 
 /*TEAM PRESENTATION*/
-.teamPresentation__title{
+.teamPresentation__title, .leaguePresentation__title{
 	width: 100%;
 	text-align: center;
 	font-size: 4rem;
 }
 
-.teamPresentation__image{
+.teamPresentation__image, .leaguePresentation__image{
 	margin: 4rem 0;
 }
 
-.teamPresentation__texte{
+.teamPresentation__texte, .leaguePresentation__texte{
 	font-size: 2rem;
 	line-height: 4rem;
 }
