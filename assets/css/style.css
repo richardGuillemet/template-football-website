@@ -101,7 +101,7 @@ main{
 
 }
 
-#players, #teams, #leagues, #teamPresentation, #leaguePresentation{
+#players, #teams, #leagues, #teamPresentation, #leaguePresentation #player{
 	width: 70%;
 	margin: 7rem auto;
 	font-family: 'Montserrat', sans-serif;
@@ -259,3 +259,33 @@ footer{
 
 
 
+/* player */
+
+#player{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.player__image{
+	width: 40%;
+	max-width: 40rem;
+	min-width: 20rem
+}
+
+.player__datas{
+	margin-left: 2rem;
+	line-height: 5rem;
+
+}
+
+.datas__detail{
+	display: block;
+	font-size: 2rem;
+}
+
+.datas__detail a{
+	text-decoration: none;
+	color: var(--blanc);
+}
