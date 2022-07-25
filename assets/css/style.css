@@ -101,7 +101,7 @@ main{
 
 }
 
-#players, #teams, #leagues{
+#players, #teams, #leagues, #teamPresentation{
 	width: 70%;
 	margin: 7rem auto;
 	font-family: 'Montserrat', sans-serif;
@@ -109,7 +109,6 @@ main{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .titleH1{
@@ -130,7 +129,7 @@ main{
 .presentation__texte{
 	margin-top: 2rem;
 	font-size: 1.8rem;
-	line-height: 2;
+	line-height: 2rem;
 }
 
 
@@ -238,3 +237,25 @@ footer{
 	font-weight: bold;
 	padding: 1.5rem 0;
 }
+
+
+
+/*TEAM PRESENTATION*/
+.teamPresentation__title{
+	width: 100%;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.teamPresentation__image{
+	margin: 4rem 0;
+}
+
+.teamPresentation__texte{
+	font-size: 2rem;
+	line-height: 4rem;
+}
+
+
+
+
