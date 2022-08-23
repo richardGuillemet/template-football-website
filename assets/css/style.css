@@ -248,7 +248,8 @@ footer{
 }
 
 .teamPresentation__image, .leaguePresentation__image{
-	margin: 4rem 0;
+	margin: 4rem auto;
+	display: block;
 }
 
 .teamPresentation__texte, .leaguePresentation__texte{
