@@ -76,6 +76,30 @@ header{
 	color: var(--vert);
 }
 
+.interaction-connexion{
+	background-color: var(--vert);
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: 0 2rem;
+}
+
+.interaction-shopping-basket{
+	font-size: 3rem;
+	background-color: rgba(0, 0, 0, 0);
+	color: var(--bleu);
+	border: none;
+	margin-left: 1rem;
+}
+
+.interaction-connexion a{
+	color: var(--noir);
+	text-decoration: none;
+	padding: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
 .introduction{
 	height: 100%;
 	position: absolute;
