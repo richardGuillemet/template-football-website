@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <title>junior fc</title>
 </head>
 
@@ -53,44 +55,25 @@
 
             </div>
         </div>
-        <div class="introduction">
+        <!-- <div class="introduction">
             <span class="introduction__title">Data Football</span>
             <span class="introduction__subtitle">Statistique sur les meilleurs joueurs de foot du monde</span>
-        </div>
+        </div> -->
     </header>
 
     <main>
+        <form class="formulaireInscription" action="index.html" method="GET">
 
-        <section id="teamPresentation">
-            <h1 class="teamPresentation__title">Kylian Mbappe</h1>
+            <input class="formulaireInscription__input" type="email" name="email" placeholder="email"
+                required="required">
 
-            <a href="#"><img class="teamPresentation__image" src="assets/images/teams/psg.png" alt="logo du club"></a>
-        </section>
+            <input class="formulaireInscription__input" type="password" name="password" placeholder="mot de passe"
+                required="required">
 
-        <section id="player">
+            <input class="formulaireInscription__submit" type="submit" value="se connecter">
 
-            <img class="player__image" src="assets/images/players/mbappe.png" alt="photo officielle du joueur">
-
-            <div class="player__datas datas">
-                <span class="datas__detail">Date de naissance :</span>
-                <span class="datas__detail">Age :</span>
-                <span class="datas__detail">Nationalité :</span>
-                <span class="datas__detail">Championnat : <a href="#"></a> </span>
-                <p class="datas__detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit veniam
-                    excepturi, autem suscipit
-                    non!
-                </p>
-                <form action="panier.html" method="POST">
-                    <button type="submit" class="datas__panier">Ajouter au panier</button>
-                </form>
-            </div>
-        </section>
+        </form>
     </main>
-
-    <footer class="footer">
-        <span class="footer__title">FC Junior</span>
-        <span class="footer__author">Richard Guillemet</span>
-    </footer>
 </body>
 
 </html>

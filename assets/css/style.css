@@ -72,7 +72,7 @@ header{
 	margin-left: 1rem;
 }
 
-.search__button:hover{
+.search__button:hover, .interaction-shopping-basket:hover{
 	color: var(--vert);
 }
 
@@ -83,13 +83,19 @@ header{
 	margin: 0 2rem;
 }
 
+.interaction-connexion:hover{
+	background-color: var(--bleu);
+}
+
 .interaction-shopping-basket{
 	font-size: 3rem;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(160, 54, 54, 0);
 	color: var(--bleu);
 	border: none;
 	margin-left: 1rem;
 }
+
+
 
 .interaction-connexion a{
 	color: var(--noir);
@@ -101,7 +107,6 @@ header{
 }
 
 .introduction{
-	height: 100%;
 	position: absolute;
 	top: 50%; 
 	left: 50%; 
@@ -313,4 +318,86 @@ footer{
 .datas__detail a{
 	text-decoration: none;
 	color: var(--blanc);
+}
+
+.datas__panier{
+	margin-top: 2rem;
+	background-color: var(--vert);
+	padding: 2rem;
+	border-radius: 1rem;
+	font-size: 2rem;
+}
+
+
+/* INSCRIPTION*/
+.formulaireInscription{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.formulaireInscription__input{
+	display: block;
+	font-size: 2rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: rgb(241, 234, 224);
+	margin-bottom: 2rem;
+}
+
+.formulaireInscription__submit{
+	margin-top: 2rem;
+	padding: 2rem;
+	border-radius: 2rem;
+	background-color: var(--vert);
+	color: var(--noir);
+	font-size: 2rem;
+}
+
+.formulaireInscription__submit:hover{
+	background-color: var(--bleu);
+	color: var(--blanc);
+}
+
+.formulaireInscription ::placeholder{
+	text-align: center;
+}
+
+/* PANIER */
+
+.achat{
+	margin: 4rem auto;
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: space-around;
+	background-color: rgb(210, 210, 211);
+}
+
+.achat__croix{
+	font-size: 3rem;
+	background-color: rgba(221, 53, 53, 0);
+	color: var(--noir);
+	border: none;
+	margin-left: 1rem;
+}
+
+.achat__croix:hover{
+	color: var(--bleu);
+}
+
+.achat__photo{
+	width: 10%;
+	max-width: 30rem;
+	min-width: 15rem
+}
+
+.achat__nom{
+	font-size: 2rem;
+	color: var(--noir);
 }
