@@ -257,7 +257,7 @@ main{
 }
 
 footer{
-	margin-top: 10rem;
+	margin-top: 5rem;
 	background-color: var(--vert);
 	display: flex;
 	flex-direction: column;
@@ -370,34 +370,48 @@ footer{
 
 /* PANIER */
 
-.achat{
-	margin: 4rem auto;
-	display: flex;
-	align-items: center;
-	width: 50%;
-	justify-content: space-around;
-	background-color: rgb(210, 210, 211);
+.panier{
+	margin: 1rem auto;
 }
 
-.achat__croix{
+.achat{
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	width: 50%;
+	background-color: rgb(210, 210, 211);
+	border: 0.5rem solid var(--blanc)
+}
+
+.formPoubelle{
+	align-self: center;
+	justify-self: end;
+	margin-right: 1rem;
+}
+
+.formPoubelle__button{
 	font-size: 3rem;
 	background-color: rgba(221, 53, 53, 0);
 	color: var(--noir);
 	border: none;
 	margin-left: 1rem;
+	display: block;
+	align-self: end;
 }
 
-.achat__croix:hover{
+.formPoubelle__button:hover{
 	color: var(--bleu);
 }
 
 .achat__photo{
 	width: 10%;
 	max-width: 30rem;
-	min-width: 15rem
+	min-width: 15rem;
 }
 
 .achat__nom{
 	font-size: 2rem;
 	color: var(--noir);
+	align-self: center;
 }

@@ -1,6 +1,16 @@
 DROP DATABASE IF EXISTS football_website;
 CREATE DATABASE football_website CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+CREATE TABLE IF NOT EXISTS `football_website` . `utilisateur`
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    prenom VARCHAR(255) NOT NULL,
+    nom VARCHAR(255) NOT NULL DEFAULT "placeholder.png",
+    email VARCHAR(255) TEXT NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+
+);
+
 CREATE TABLE IF NOT EXISTS `football_website` . `championnat`
 (
     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
